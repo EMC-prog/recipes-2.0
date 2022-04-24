@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Recetario</title>
+  <meta name="description" content="Recetario">
+
+  <meta name="theme-color" content="#2196F3">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="shortcut icon" type="image/png" href="img/mainlogo.png">
+  <link rel="apple-touch-icon" href="img/mainlogo.png">
+  <link rel="apple-touch-startup-image" href="img/mainlogo.png">
+  <link rel="manifest" href="./manifest.json">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="Header">
+  <h1>EMC Recetas</h1>
+  <p>
+    Seleccione la receta que se quiere leer.
+  </p>
+</header>
+<footer>
+  <div>
+    <ul>
+      <li> <a href="recipes/pancakes.html">Pancakes</a> </li>
+      <li> <a href="recipes/brownies.html">Brownies</a> </li>
+    </ul>
+  </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+  <div>
+    <a onclick="  navigator.share({ title: 'Compartir EMC Recetas', text: '¡Cocina con EMC Recetas!', url: 'https://emc-prog.github.io/recipes/',})">Compartir app</a>
+<br>
+    <a onclick="self.addEventListener('activate', function(event) {
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.filter(function(cacheName) {
+          // Return true if you want to remove this cache,
+          // but remember that caches are shared across
+          // the whole origin
+        }).map(function(cacheName) {
+          return caches.delete(cacheName);
+        })
+      );
+    })
+  );
+                });">Actualizar app</a> 
+    <a onclick="alert('A veces, la app puede no actualizarse automáticamente. Pulsando este botón y reiniciando la app puede solucionar el problema. Una actualización puede incluír nuevas recetas o mejoras.');">   (?)</a>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+
+</html>
