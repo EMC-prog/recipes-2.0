@@ -23,7 +23,7 @@
   <body>
     <div class="mui-appbar">
     <tr style="vertical-align:middle;">
-      <td class="mui--appbar-height"><h3 class="mui--text-center">EMC Recetas</h3></td>
+      <td class="mui--appbar-height"><h3 class="mui--pull-center">EMC Recetas</h3></td>
       <td class="mui--appbar-height"><a class="mui-btn mui-btn--small mui-btn--primary mui--pull-left" onclick="  navigator.share({ title: 'Compartir EMC Recetas', text: '¡Cocina con EMC Recetas!', url: 'https://emc-prog.github.io/recipes/',})">Compartir app</a></td>
       <td class="mui--appbar-height"><a class="mui-btn mui-btn--small mui-btn--primary mui--pull-right"  onclick="self.addEventListener('activate', function(event) {
   event.waitUntil(    caches.keys().then(function(cacheNames) {      return Promise.all(        cacheNames.filter(function(cacheName) {
