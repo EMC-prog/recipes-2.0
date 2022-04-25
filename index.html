@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Recetario</title>
   <meta name="description" content="Recetario">
-
+<script src="js/script.js"></script>
   <meta name="theme-color" content="#2196F3">
   <meta name="MobileOptimized" content="width">
   <meta name="HandheldFriendly" content="true">
@@ -17,33 +17,24 @@
   <link rel="apple-touch-icon" href="img/mainlogo.png">
   <link rel="apple-touch-startup-image" href="img/mainlogo.png">
   <link rel="manifest" href="./manifest.json">
-
-<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-</head>
-
-<body>
-<header class="Header">
-  <h1>EMC Recetas</h1>
-  <p>
+  <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+  <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+  </head>
+  <body>
+    <!-- example content -->
+    <div class="mui-container">
+      <div class="mui-panel">
+        <h1>EMC Recetas</h1>
+          <p>
     Seleccione la receta que se quiere leer.
-  </p>
-</header>
-<footer>
-  <div>
-    <ul>
-      <li> <a href="recipes/pancakes.html">Pancakes</a> </li>
-      <li> <a href="recipes/brownies.html">Brownies</a> </li>
-    </ul>
-  </div>
-    <br>
+          </p>
+        <a href="recipes/pancakes.html" class="mui-btn mui-btn--primary mui-btn--raised">Pancakes</a>
+        <a href="recipes/brownies.html" class="mui-btn mui-btn--primary mui-btn--raised">Brownies</a>
     <br>
     <hr>
     <br>
-    <br>
-  <div>
-    <a onclick="  navigator.share({ title: 'Compartir EMC Recetas', text: '¡Cocina con EMC Recetas!', url: 'https://emc-prog.github.io/recipes/',})">Compartir app</a>
-<br>
-    <a onclick="self.addEventListener('activate', function(event) {
+        <a class="mui-btn mui-btn--small mui-btn--primary" onclick="  navigator.share({ title: 'Compartir EMC Recetas', text: '¡Cocina con EMC Recetas!', url: 'https://emc-prog.github.io/recipes/',})">Compartir app</a>
+    <a class="mui-btn mui-btn--small mui-btn--primary"  onclick="self.addEventListener('activate', function(event) {
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(
@@ -57,11 +48,15 @@
       );
     })
   );
-                });">Actualizar app</a> 
-    <a onclick="alert('A veces, la app puede no actualizarse automáticamente. Pulsando este botón y reiniciando la app puede solucionar el problema. Una actualización puede incluír nuevas recetas o mejoras.');">   (?)</a>
+                });">Actualizar app</a>     <a onclick="alert('A veces, la app puede no actualizarse automáticamente. Pulsando este botón y reiniciando la app puede solucionar el problema. Una actualización puede incluír nuevas recetas o mejoras.');">   (?)</a>
+      </div>
+    </div>
+  </body>
+</html>
+
+
   </div>
-</footer>
-<script src="js/script.js"></script>
+
 </body>
 
 </html>
