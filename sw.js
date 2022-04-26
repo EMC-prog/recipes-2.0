@@ -11,7 +11,9 @@ const CACHE_NAME = 'v1_pwa_app_cache',
   //  'css/style.css',
     'js/script.js',
     'img/mainlogo.png',
-    'img/favicon.png'
+    'img/favicon.png',
+    'https://cdn.muicss.com/mui-0.10.3/js/mui.min.js',
+    'https://cdn.muicss.com/mui-0.10.3/css/mui.min.css'
   ]
 window.addEventListener("load", () => {
   function handleNetworkChange(event) {
