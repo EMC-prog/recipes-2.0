@@ -10,7 +10,12 @@ const CACHE_NAME = 'v1_pwa_app_cache',
     'img/mainlogo.png',
     'img/favicon.png'
   ]
-
+if (navigator.onLine) {  
+  console.log('online');
+} else { 
+  console.log('offline'); 
+  alert('Está sin conexión a internet. No podrá acceder a las recetas.');
+}
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
 self.addEventListener('install', e => {
   e.waitUntil(
