@@ -74,7 +74,7 @@
     <br>
     <hr>
     <br>
-      <a class="mui-btn mui-btn--small mui-btn--primary mui--pull-left" onclick="  navigator.share({ title: 'Compartir EMC Recetas', text: '¡Cocina con EMC Recetas!', url: 'https://emc-prog.github.io/recipes/',})">Compartir app</a>
+      <a class="mui-btn mui-btn--small mui-btn--primary mui--pull-left" onclick="  navigator.share({ title: 'Compartir EMC Recetas', text: '¡Cocina con EMC Recetas!', url: 'https://emc-prog.github.io/recipes/',})">Compartir app   </a>
       <div class="mui-dropdown">
   <button class="mui-btn mui-btn--primary" data-mui-toggle="dropdown">
     DevActions
@@ -83,8 +83,6 @@
   <ul class="mui-dropdown__menu">
     <li><a onclick="navigator.serviceWorker.getRegistrations().then( function(registrations) { for(let registration of registrations) { registration.unregister(); } });">Actualizar app</a></li>
     <li><a onclick="alert('A veces, la app puede no actualizarse automáticamente. Pulsando este botón y reiniciando la app puede solucionar el problema. Una actualización puede incluír nuevas recetas o mejoras.');">(?)</a></li>
-    <li><a href="#">Próximamente</a></li>
-    <li><a href="#">Próximamente</a></li>
   </ul>
 </div> 
       <!--
