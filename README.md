@@ -1,8 +1,7 @@
 # RecipesPWA
-A Progressive Web App demo about cooking recipes, made with MUIcss.
 
-It has all the functionality of a PWA, including a custom offline page.
+Un recetario creado a forma de aplicación web progresiva (PWA).
 
-## Credits:
-* Recipes and app designed by me.
-* CSS framework: [MUI - Material Design CSS Framework](https://www.muicss.com/)
+## Creditos:
+* Recetas y estructura de la aplicación creada por mí.
+* Framework de CSS utilizado: [MUI - Material Design CSS Framework](https://www.muicss.com/)
